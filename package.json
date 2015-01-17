@@ -1,0 +1,12 @@
+{
+  "name": "fis-nw-gui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "chromium-args" : "--disable-direct-write",
+  "author": "hefangshi",
+  "license": "BSD"
+}

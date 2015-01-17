@@ -1,0 +1,40 @@
+<!--
+    @require lib/vendor/mod.js
+    @require lib/vendor/jquery.js
+    @require lib/vendor/vue.js
+    @require lib/vendor/bootstrap/css/bootstrap.css
+-->
+<html>
+<head>
+    <title>F.I.S</title>
+    <meta charset='utf-8'>
+</head>
+<body>
+    <div id="app">
+        <c-menu class="clearfix"></c-menu>
+        <div class="animated" v-component="{{currentView}}" keep-alive v-transition="swap" transition-mode="out-in"></div>
+    </div>
+    <script type="text/javascript">
+        if (window.require){
+            F.define('core', function(Frequire, exports, module){
+                module.exports = require('fis-gui-core');
+            });
+        }else{
+            F.define('core', function(Frequire, exports, module){
+                module.exports = F.require('fis-gui-core');
+            });
+        }
+        var app = new Vue({
+            el: '#app',
+            data: {
+                currentView: 'c-index'
+            },
+            components: {
+                'c-index': F.require('index'),
+                'c-setting': F.require('setting'),
+                'c-menu': F.require('menu')
+            }
+        });
+    </script>
+</body>
+</html>

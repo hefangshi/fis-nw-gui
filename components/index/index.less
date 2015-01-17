@@ -1,0 +1,36 @@
+html{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+
+button.btn {
+    outline:0px !important;
+    -webkit-appearance:none;
+}
+
+.main {
+    margin: 10 50px;
+
+    .group:first-child {
+        margin-top: 0;
+    }
+
+    .group {
+        margin-top: 10px;
+        display: block;
+    }
+}
+
+.animated {
+    display: inline-block;
+    transition: -webkit-transform .5s ease;
+    -webkit-transform: rotateY(0deg);
+}
+.animated.swap-enter {
+    -webkit-transform: rotateY(90deg);
+}
+.animated.swap-leave {
+    -webkit-transform: rotateY(-90deg);
+}
+
