@@ -1,11 +1,8 @@
-<div class="folderDrop" v-on="drop:onDrop, dragover:onDragOver, dragleave:onDragLeave" v-class="hover:isHover">
-    Drop {{targetName}} Folder
+<div class="folderDrop" v-on="drop:onDrop, mouseover:onDragOver, mouseleave:onDragLeave, dragover:onDragOver, dragleave:onDragLeave, click:chooseFolder" v-class="hover:isHover">
+    <span class="light">Drop folder here or click to choose</span>
+    <input name="file" type="file" class="folderChooser" v-show="false" multiple nwdirectory v-on="change: onChange"/>
 </div>
 <div class="input-group folderSelect">
     <span class="input-group-addon">{{targetName}} Path</span>
     <input type="text" class="form-control" name="cwd" v-model="folderPath" readonly>
-    <span class="input-group-btn">
-        <input name='file' type="file" class="folderChooser" v-show="false" multiple nwdirectory v-on="change: onChange"/>
-        <button type="button" v-on='click:chooseFolder' class="btn btn-default">Select</button>
-    </span>
 </div>

@@ -1,0 +1,103 @@
+@background-color: white;
+
+html {
+    font-size: 14px;
+    height: 100vh;
+}
+
+body {
+    -webkit-user-select:none;
+    padding: 5px;
+    background: transparent;
+}
+
+// button.btn {
+//     outline:0px !important;
+//     -webkit-appearance:none;
+//     border-radius:0;
+// }
+
+.glyphicon {
+    color: #666;
+}
+
+.input-group-addon {
+    background-color: @background-color;
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{
+    background-color: @background-color;
+}
+
+.form-control {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+#app {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: auto;
+    background: @background-color;
+    border:1px solid #bbb;
+}
+
+.page {
+    padding: 10 50px;
+}
+
+.menu-wrap {
+    -webkit-app-region: drag;
+    -user-select: none;
+    width: 100%;
+    cursor: move;
+}
+
+.panel-buttons {
+    margin-top: 15px;
+    float: right;
+}
+
+.fg-section {
+    position: relative;
+    padding: 45px 15px 15px;
+    border-style: solid;
+    background-color: #fff;
+    border-color: #ddd;
+    border-width: 1px;
+    border-radius: 4px 4px 0 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+    .title {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        font-size: 12px;
+        color: #959595;
+        letter-spacing: 1px;
+    }
+}
+
+.title {
+    font-size: 18px;
+    color: #333333;
+    line-height: 50px;
+}
+
+
+.light {
+    font-family: "Segoe UI light", "Segoe WP", "Helvetica Neue", sans-serif;
+}
+
+.fg-callout-danger {
+    border-left-color: #d9534f;
+}
+
+.fg-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}

@@ -2,7 +2,7 @@
     @require lib/vendor/mod.js
     @require lib/vendor/jquery.js
     @require lib/vendor/vue.js
-    @require lib/vendor/bootstrap/css/bootstrap.css
+    @require lib/vendor/bootstrap/css/metro-bootstrap.css
     @require static/css/index.less
 -->
 <html>
@@ -11,11 +11,16 @@
     <meta charset='utf-8'>
 </head>
 <body>
-    <div id="app">
+    <div id="app" class="box">
         <div class="menu-wrap">
             <c-menu class="clearfix"></c-menu>
         </div>
-        <div class="animated" v-component="{{currentView}}" keep-alive v-transition="swap" transition-mode="out-in"></div>
+        <div class="animated page" v-component="{{currentView}}" keep-alive v-transition="swap" transition-mode="out-in"></div>
+        <ul>
+            <li v-repeat="projects">
+                {{path}}
+            </li>
+        </ul>
     </div>
     <script type="text/javascript">
         if (window.require){
@@ -27,15 +32,28 @@
                 module.exports = F.require('fis-gui-core');
             });
         }
+        var appData = {
+            currentView: 'c-project',
+            projects: F.require('core').project.getProjects(),
+            nav: {
+                "c-project": "Add",
+                "c-index": "Run",
+            }
+        }
         var app = new Vue({
             el: '#app',
-            data: {
-                currentView: 'c-index'
-            },
+            data: appData,
             components: {
+                'c-nav': F.require('nav'),
                 'c-index': F.require('index'),
                 'c-setting': F.require('setting'),
-                'c-menu': F.require('menu')
+                'c-menu': F.require('menu'),
+                'c-project': F.require('project')
+            },
+            created: function(){
+                this.$on('addProject', function(project){
+                    this.projects.push(project);
+                });
             }
         });
     </script>

@@ -1,4 +1,7 @@
-<div class="btn-group menu" role="group" aria-label="menu clearfix">
+<div class="btn-group btn-group-sm nav" role="group" aria-label="nav">
+    <button type="button" class="btn btn-default" v-repeat="nav" v-on="click: onViewClick" data-view="{{$key}}">{{$value}}</button>
+</div>
+<div class="btn-group menu" role="group" aria-label="control">
     <button type="button" class="btn btn-default" aria-label="Close" v-on='click:onHome'>
      <span class="glyphicon glyphicon-home"></span>
     </button>

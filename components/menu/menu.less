@@ -1,10 +1,27 @@
-.menu{
+.menu {
     float: right;
     .btn {
         -webkit-app-region: no-drag;
         border-top: none;
+        // border-top-left-radius: 0;
+        // border-bottom-right-radius: 0;
+    }
+
+    .btn:last-child{
         border-right: none;
-        border-top-left-radius: 0;
-        border-bottom-right-radius: 0;
+    }
+}
+
+.nav {
+    .btn {
+        -webkit-app-region: no-drag;
+        border-top: none;
+        // border-top-right-radius: 0;
+        // border-bottom-left-radius: 0;
+        // font-weight: bold;
+    }
+
+    .btn:first-child{
+        border-left: none;
     }
 }
