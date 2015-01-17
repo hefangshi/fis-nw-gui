@@ -6,7 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "window": {
+    "toolbar": false,
+    "frame": false,
+    "width": 600,
+    "height": 600,
+    "resize": false,
+    "transparent": true,
+    "position": "center"
+  },
   "chromium-args" : "--disable-direct-write",
-  "author": "hefangshi",
-  "license": "BSD"
+  "author": "",
+  "license": "ISC"
 }

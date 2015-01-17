@@ -7,6 +7,12 @@ module.exports = {
         },
         onHome: function(e){
             this.currentView = 'c-index';
+        },
+        onClose: function(){
+            window.close();
+        },
+        onRefresh: function(){
+            window.location.href =window.location.href;
         }
     }
 };

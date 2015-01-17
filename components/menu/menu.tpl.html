@@ -1,11 +1,15 @@
-<div class="btn-group menu" role="group" aria-label="menu">
+<div class="btn-group menu" role="group" aria-label="menu clearfix">
     <button type="button" class="btn btn-default" aria-label="Close" v-on='click:onHome'>
      <span class="glyphicon glyphicon-home"></span>
     </button>
     <button type="button" class="btn btn-default" aria-label="Close" v-on='click:onSetting'>
      <span class="glyphicon glyphicon-cog"></span>
     </button>
-    <button type="button" class="btn btn-default" aria-label="Close">
+    <button type="button" class="btn btn-default" aria-label="Close" v-on='click:onRefresh'>
+     <span class="glyphicon glyphicon-refresh"></span>
+    </button>
+    <button type="button" class="btn btn-default" aria-label="Close" v-on='click:onClose'>
          <span class="glyphicon glyphicon-remove"></span>
     </button>
+    </div>
 </div>
