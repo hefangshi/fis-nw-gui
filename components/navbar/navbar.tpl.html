@@ -1,0 +1,6 @@
+<ul class="fg-navbar">
+    <li v-class="active: active==name" v-on="click: onClick(this)" v-repeat="items">
+        <span class="glyphicon {{icon}}"></span>
+        <span>{{name}}</span>
+    </li>
+</ul>

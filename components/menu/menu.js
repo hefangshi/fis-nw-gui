@@ -2,9 +2,9 @@ module.exports = {
     template: __inline('./menu.tpl.html'),
     inherit: true,
     methods: {
-        onSetting: function(e){
-            this.currentView = 'c-setting';
-        },
+        // onSetting: function(e){
+        //     this.currentView = 'c-setting';
+        // },
         onHome: function(e){
             this.currentView = 'c-nav';
         },
@@ -14,8 +14,8 @@ module.exports = {
         onRefresh: function(){
             window.location.href =window.location.href;
         },
-        onViewClick: function(e){
-            this.currentView = $(e.target).attr('data-view');
-        }
+        // onViewClick: function(e){
+        //     this.currentView = $(e.target).attr('data-view');
+        // }
     }
 };

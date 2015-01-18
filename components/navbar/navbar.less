@@ -1,0 +1,49 @@
+.fg-navbar {
+    list-style-type: none;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+
+    >li {
+        display: table-cell;
+        width: 1%;
+        text-align: center;
+        height: 100px;
+        border-top: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        background-color: #f5f5f5;
+        vertical-align: middle;
+        cursor: pointer;
+
+        .glyphicon{
+            display: block;
+            font-size: 24px;
+            line-height: 35px;
+        }
+    }
+
+    >li:hover {
+        color: #2e8bcc;
+
+        .glyphicon{
+            color: #2e8bcc;
+        }
+    }
+
+    >li.active {
+        color: #2e8bcc;
+        background-color: white;
+        border-top: none;
+        cursor: default;
+
+        .glyphicon{
+            color: #2e8bcc;
+        }
+    }
+
+    >li:last-child {
+        border-right: none;
+    }
+}

@@ -15,12 +15,13 @@
         <div class="menu-wrap">
             <c-menu class="clearfix"></c-menu>
         </div>
-        <div class="animated page" data-view="{{currentView}}" v-component="{{currentView}}" keep-alive v-transition="swap" transition-mode="out-in"></div>
-        <ul>
-            <li v-repeat="projects">
-                {{path}}
-            </li>
-        </ul>
+        <div class="animated page"
+            data-view="{{currentView}}"
+            v-component="{{currentView}}"
+            keep-alive
+            v-transition="swap" transition-mode="out-in">
+        </div>
+        <c-navbar></c-navbar>
     </div>
     <script type="text/javascript">
         if (window.require){
@@ -33,23 +34,19 @@
             });
         }
         var appData = {
-            currentView: 'c-projects',
-            projects: F.require('core').project.getProjects(),
-            nav: {
-                "c-add-project": "Add",
-                "c-index": "Run",
-            }
+            currentView: 'c-index',
+            projects: F.require('core').project.getProjects()
         }
         var app = new Vue({
             el: '#app',
             data: appData,
             components: {
-                'c-nav': F.require('nav'),
                 'c-index': F.require('index'),
                 'c-setting': F.require('setting'),
                 'c-menu': F.require('menu'),
                 'c-add-project': F.require('add-project'),
                 'c-projects': F.require('projects'),
+                'c-navbar': F.require('navbar'),
             },
             created: function(){
                 this.$on('addProject', function(project){
