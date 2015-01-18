@@ -1,0 +1,15 @@
+language: node_js
+install:
+- npm install -g fis
+- npm install -g fis-postpackager-autoload
+- npm install -g fis-parser-less
+- npm install -g fis-deploy-git
+script: fis release -dD ghpages
+branches:
+  only:
+  - master
+cache:
+- npm
+env:
+  global:
+    secure: WMUL1llGrvqUZ3WRleIypyA1p5NXp7MUbNcqZEKtHwHjeyTcplrxwMxw5qnQHvsnBwJ8uYo5eyYWKg7o22ZAhdiae+4evUUdsL24UpsC/xSktQuEDcX8HWniAPzWHAPexkYcFz+euMczcPo+qbJrGKg+l4j7q+eeGM7zf0xbU8k=

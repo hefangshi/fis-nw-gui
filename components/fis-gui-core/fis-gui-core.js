@@ -19,8 +19,16 @@ module.exports = {
                     name: 'map',
                     path: '/home/work/code/map',
                     dest: 'remote'
+                },
+                {
+                    name: 'common',
+                    path: '/home/work/code/common',
+                    dest: 'remote'
                 }
             ]
+        },
+        getProjectFromFolders: function(){
+            return [];
         }
     }
 }

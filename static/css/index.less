@@ -1,4 +1,6 @@
 @background-color: white;
+@input-bg-color: white;
+@font-color: inherit;
 
 html {
     font-size: 14px;
@@ -9,6 +11,10 @@ body {
     -webkit-user-select:none;
     padding: 5px;
     background: transparent;
+}
+
+input {
+    background-color: @input-bg-color;
 }
 
 // button.btn {
@@ -23,18 +29,22 @@ body {
 
 .input-group-addon {
     background-color: @background-color;
+
 }
 
 .form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{
-    background-color: @background-color;
+    background-color: @input-bg-color;
 }
 
 .form-control {
     box-shadow: none;
+    background-color: @input-bg-color;
     -webkit-box-shadow: none;
+    color: @font-color;
 }
 
 #app {
+    color: @font-color;
     box-sizing: border-box;
     height: 100%;
     overflow: auto;
@@ -44,6 +54,7 @@ body {
 
 .page {
     padding: 10 50px;
+    width: 100%;
 }
 
 .menu-wrap {
@@ -100,4 +111,19 @@ body {
     border: 1px solid #eee;
     border-left-width: 5px;
     border-radius: 3px;
+}
+
+.animated {
+    display: inline-block;
+    transition: -webkit-transform .5s ease;
+    -webkit-transform: rotateY(0deg);
+
+}
+
+.animated.swap-enter {
+    -webkit-transform: rotateY(90deg);
+}
+
+.animated.swap-leave {
+    -webkit-transform: rotateY(-90deg);
 }

@@ -27,3 +27,13 @@ fis.config.set('roadmap.path', [
         useStandard: false
     }
 ]);
+
+fis.config.set('modules.deploy', ['default', 'git']);
+fis.config.set('settings.deploy.git', {
+    ghpages: {
+        from : '/',
+        to: '/',
+        remote: 'https://' + process.env.GIT_NAME + ':' + process.env.GH_TOKEN + '@github.com/hefangshi/fis-nw-gui',
+        branch: 'gh-pages'
+    }
+});

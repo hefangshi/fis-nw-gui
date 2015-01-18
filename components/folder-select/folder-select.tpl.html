@@ -2,7 +2,3 @@
     <span class="light">Drop folder here or click to choose</span>
     <input name="file" type="file" class="folderChooser" v-show="false" multiple nwdirectory v-on="change: onChange"/>
 </div>
-<div class="input-group folderSelect">
-    <span class="input-group-addon">{{targetName}} Path</span>
-    <input type="text" class="form-control" name="cwd" v-model="folderPath" readonly>
-</div>

@@ -2,19 +2,21 @@ module.exports = {
     template: __inline('./folder-select.tpl.html'),
     data: function(){
         return {
-            folderPath: null,
             isHover: false
         }
     },
     methods: {
         onChange: function(e){
-            this.$data.folderPath = $(e.target).val();
+            this.$dispatch('folderSelected', [{
+                path: $(e.target).val()
+            }]);
         },
         onDrop: function(e){
             e.preventDefault();
             var file = e.dataTransfer.files[0];
             this.isHover = false;
             this.folderPath = file.path;
+            this.$dispatch('folderSelected', e.dataTransfer.files);
             return false;
         },
         onDragLeave: function(e){
