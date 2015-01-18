@@ -11,12 +11,12 @@ module.exports = {
                     "view": "c-index",
                 },
                 {
-                    "name": "Project",
+                    "name": "Projects",
                     "icon": "glyphicon-folder-open",
                     "view": "c-projects"
                 },
                 {
-                    "name": "Setting",
+                    "name": "Settings",
                     "icon": "glyphicon-cog",
                     "view": "c-setting"
                 }

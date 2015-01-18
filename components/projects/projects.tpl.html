@@ -12,12 +12,12 @@
     </div>
   </div>
 </div> -->
-<button class="btn btn-primary" v-on="click: currentView='c-add-project'">Add project</button>
+<button class="btn btn-primary" v-on="click: addProject">Add project</button>
 <p></p>
 <div class="panel panel-default project-panel" v-repeat="projects">
   <!-- Default panel contents -->
-  <div class="panel-heading" v-on="click: showProjectInfo" data-index="{{$index}}" v-style="border-bottom-width: $parent.now==$index ? 1 : 0">{{name}}</div>
-  <div class="panel-body" v-show="$parent.now==$index" v-transition="expand">
+  <div class="panel-heading" v-on="click: showProjectInfo" data-index="{{$index}}" v-style="border-bottom-width: $parent.settingProject==$index ? 1 : 0">{{name}}</div>
+  <div class="panel-body" v-show="$parent.settingProject==$index" v-transition="expand">
     <c-project-info v-with="$data" class="panel-body-wrap"></c-project-info>
   </div>
 </div>

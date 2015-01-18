@@ -11,6 +11,7 @@ module.exports = {
     created: function(){
         this.$on('folderSelected', function(folders){
             var projects = core.project.getProjectFromFolders(folders);
+            this.settingProject = this.projects.length -1 + (projects.length == 0 ? 0 : 1);
             this.projects = this.projects.concat(projects);
             this.currentView = 'c-projects';
             return false;

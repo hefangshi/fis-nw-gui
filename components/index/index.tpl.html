@@ -1,3 +1,39 @@
 <div class="main">
+    <div class="panel panel-primary">
+            <!-- Default panel contents -->
+            <div class="panel-heading">Projects List</div>
+            <ul class="list-group">
+                <li class="list-group-item project-item" v-repeat="projects">
+                    <label>
+                        <input type="checkbox"/>
+                        <span>{{name}}</span>
+                    </label>
+                    <div class="btn-group release-options" role="group">
+                        <button type="button" class="btn btn-default watch-button" 
+                            v-class="watch ? 'btn-success' : 'btn-default'"
+                            v-on="click:watch=!watch">
+                            watch
+                        </button>
+                        <button type="button" class="btn btn-default live-button"
+                            v-class="live ? 'btn-success' : 'btn-default'"
+                            v-on="click:live=!live">
+                            live
+                        </button>
+                        <div class="btn-group">
+                            <button class="btn btn-default dropdown-toggle dest-button" type="button" data-toggle="dropdown" aria-expanded="false">
+                            {{chosenDest}}<span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li v-repeat="dest"><a href="#">{{$value}}</a></li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn btn-default setting-button" v-on="click: goSetting($index)">
+                            <span class="glyphicon glyphicon-cog"></span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
     <c-command v-with="commands: commands" class="group"></c-command>
 </div>
