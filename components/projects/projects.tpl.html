@@ -12,7 +12,8 @@
     </div>
   </div>
 </div> -->
-
+<button class="btn btn-primary" v-on="click: currentView='c-add-project'">Add project</button>
+<p></p>
 <div class="panel panel-default project-panel" v-repeat="projects">
   <!-- Default panel contents -->
   <div class="panel-heading" v-on="click: showProjectInfo" data-index="{{$index}}" v-style="border-bottom-width: $parent.now==$index ? 1 : 0">{{name}}</div>

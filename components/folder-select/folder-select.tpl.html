@@ -1,4 +1,12 @@
-<div class="folderDrop" v-on="drop:onDrop, mouseover:onDragOver, mouseleave:onDragLeave, dragover:onDragOver, dragleave:onDragLeave, click:chooseFolder" v-class="hover:isHover">
+<div class="folderDrop" v-on="drop:onDrop, 
+    mouseover:onDragOver, 
+    mouseleave:onDragLeave, 
+    dragover:onDragOver, 
+    dragleave:onDragLeave, 
+    click:chooseFolder" 
+    v-class="hover:isHover"
+    v-style="height:height,
+            line-height:height">
     <span class="light">Drop folder here or click to choose</span>
     <input name="file" type="file" class="folderChooser" v-show="false" multiple nwdirectory v-on="change: onChange"/>
 </div>
