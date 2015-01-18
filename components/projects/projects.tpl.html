@@ -14,7 +14,7 @@
 </div> -->
 <button class="btn btn-primary" v-on="click: addProject">Add project</button>
 <p></p>
-<div class="panel panel-default project-panel" v-repeat="projects">
+<div class="panel project-panel panel-default" v-repeat="projects" v-class="panel-primary: $parent.settingProject==$index">
   <!-- Default panel contents -->
   <div class="panel-heading" v-on="click: showProjectInfo" data-index="{{$index}}" v-style="border-bottom-width: $parent.settingProject==$index ? 1 : 0">{{name}}</div>
   <div class="panel-body" v-show="$parent.settingProject==$index" v-transition="expand">

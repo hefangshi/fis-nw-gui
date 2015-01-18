@@ -1,16 +1,9 @@
-var core = F.require('core');
-
 module.exports = {
-    template: __inline('./index.tpl.html'),
+    template: __inline('./project-quickview.tpl.html'),
     inherit: true,
-    data: function(){
-        return {
-            commands: core.command.getCommands()
-        }
-    },
     components: {
-        'c-command': F.require('command'),
-        'c-project-quickview': F.require('project-quickview')
+        'c-folder-select': F.require('folder-select'),
+        'c-command': F.require('command')
     },
     methods: {
         goSetting: function(index){

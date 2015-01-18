@@ -6,7 +6,7 @@ module.exports = {
     },
     methods: {
         showProjectInfo: function(e){
-            this.now = $(e.target).attr('data-index');
+            this.settingProject = $(e.target).attr('data-index');
         },
         addProject: function(){
             this.currentView = 'c-add-project';
