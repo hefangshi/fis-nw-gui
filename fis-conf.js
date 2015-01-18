@@ -35,6 +35,7 @@ fis.config.set('settings.deploy.git', {
         to: '/',
         remote: 'https://' + process.env.GIT_NAME + ':' + process.env.GH_TOKEN + '@github.com/hefangshi/fis-nw-gui',
         branch: 'gh-pages',
-        silent: true
+        silent: true,
+        deepSilent: true
     }
 });
