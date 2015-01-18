@@ -15,4 +15,4 @@ cache:
   - "/home/travis/.nvm/v0.10.35/lib/node_modules"
 env:
   global:
-    secure: LVFfYoJsVtEY6BOJX5SqllKfYJUW9M1zQBmbcsdRU7tvwtbh3JEk80Xh94WUDkFHU3NoauXxMvYRTd8incXcekmDdSJeBFZLvvL956fWYawjFThW/LryddyQSmPWGmv/XivFgngezQPF/DBTouyx9JpSWtRe/C2NsJamqMDyZrk=
+    secure: dcRk4Z37pYdDunmB9pglzkp8uT84reR///rL2jPVmz8fDxzFGe3nO+znWKMiwCTUpBuYfH4YEQ7O0JJ+YPaw4Ez8CXMxlQPg3mr7UYXpkqH1fz6jXqasopDBFATB16wFh+GMu2k99sFMWbM60eVn/zEs1LLKCJfHSPZrG2UcMFw=
