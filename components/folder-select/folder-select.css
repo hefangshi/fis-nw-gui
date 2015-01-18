@@ -1,0 +1,22 @@
+.folderDrop {
+  border: 1px dashed #999;
+  height: 160px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  text-align: center;
+  color: #999;
+  line-height: 160px;
+  font-size: 26px;
+  width: 100%;
+}
+.folderDrop.hover {
+  color: #222;
+  border-color: #222;
+}
+.folderSelect {
+  margin-top: 20px;
+}

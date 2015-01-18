@@ -1,0 +1,99 @@
+html {
+  font-size: 14px;
+  height: 100vh;
+}
+body {
+  -webkit-user-select: none;
+  padding: 5px;
+  background: transparent;
+}
+input {
+  background-color: #ffffff;
+}
+.glyphicon {
+  color: #666;
+}
+.input-group-addon {
+  background-color: #ffffff;
+}
+.form-control[disabled],
+.form-control[readonly],
+fieldset[disabled] .form-control {
+  background-color: #ffffff;
+}
+.form-control {
+  box-shadow: none;
+  background-color: #ffffff;
+  -webkit-box-shadow: none;
+  color: inherit;
+}
+#app {
+  color: inherit;
+  box-sizing: border-box;
+  height: 100%;
+  overflow: auto;
+  background: #ffffff;
+  border: 1px solid #bbb;
+}
+.page {
+  padding: 10 50px;
+  width: 100%;
+}
+.menu-wrap {
+  -webkit-app-region: drag;
+  -user-select: none;
+  width: 100%;
+  cursor: move;
+}
+.panel-buttons {
+  margin-top: 15px;
+  float: right;
+}
+.fg-section {
+  position: relative;
+  padding: 45px 15px 15px;
+  border-style: solid;
+  background-color: #fff;
+  border-color: #ddd;
+  border-width: 1px;
+  border-radius: 4px 4px 0 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.fg-section .title {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 12px;
+  color: #959595;
+  letter-spacing: 1px;
+}
+.title {
+  font-size: 18px;
+  color: #333333;
+  line-height: 50px;
+}
+.light {
+  font-family: "Segoe UI light", "Segoe WP", "Helvetica Neue", sans-serif;
+}
+.fg-callout-danger {
+  border-left-color: #d9534f;
+}
+.fg-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+.animated {
+  display: inline-block;
+  transition: -webkit-transform 0.5s ease;
+  -webkit-transform: rotateY(0deg);
+}
+.animated.swap-enter {
+  -webkit-transform: rotateY(90deg);
+}
+.animated.swap-leave {
+  -webkit-transform: rotateY(-90deg);
+}

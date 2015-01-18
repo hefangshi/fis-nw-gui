@@ -1,0 +1,87 @@
+<!--
+    @require lib/vendor/mod.js
+    @require lib/vendor/jquery.js
+    @require lib/vendor/vue.js
+    @require lib/vendor/bootstrap/css/metro-bootstrap.css
+    @require static/css/index.less
+-->
+<html>
+<head>
+    <title>F.I.S GUI</title>
+    <meta charset='utf-8'>
+<link rel="stylesheet" type="text/css" href="lib/vendor/bootstrap/css/metro-bootstrap.css">
+<link rel="stylesheet" type="text/css" href="static/css/index.css">
+<link rel="stylesheet" type="text/css" href="components/nav/nav.css">
+<link rel="stylesheet" type="text/css" href="components/folder-select/folder-select.css">
+<link rel="stylesheet" type="text/css" href="components/index/index.css">
+<link rel="stylesheet" type="text/css" href="components/setting/setting.css">
+<link rel="stylesheet" type="text/css" href="components/menu/menu.css">
+<link rel="stylesheet" type="text/css" href="components/add-project/add-project.css">
+<link rel="stylesheet" type="text/css" href="components/project-info/project-info.css">
+<link rel="stylesheet" type="text/css" href="components/projects/projects.css">
+
+<script type="text/javascript" src="lib/vendor/mod.js"></script>
+<script type="text/javascript" src="lib/vendor/jquery.js"></script>
+<script type="text/javascript" src="lib/vendor/vue.js"></script>
+<script type="text/javascript" src="components/fis-gui-core/fis-gui-core.js"></script>
+<script type="text/javascript" src="components/nav/nav.js"></script>
+<script type="text/javascript" src="components/folder-select/folder-select.js"></script>
+<script type="text/javascript" src="components/command/command.js"></script>
+<script type="text/javascript" src="components/index/index.js"></script>
+<script type="text/javascript" src="components/setting/setting.js"></script>
+<script type="text/javascript" src="components/menu/menu.js"></script>
+<script type="text/javascript" src="components/add-project/add-project.js"></script>
+<script type="text/javascript" src="components/project-info/project-info.js"></script>
+<script type="text/javascript" src="components/projects/projects.js"></script>
+
+</head>
+<body>
+    <div id="app" class="box">
+        <div class="menu-wrap">
+            <c-menu class="clearfix"></c-menu>
+        </div>
+        <div class="animated page" data-view="{{currentView}}" v-component="{{currentView}}" keep-alive v-transition="swap" transition-mode="out-in"></div>
+        <ul>
+            <li v-repeat="projects">
+                {{path}}
+            </li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        if (window.require){
+            F.define('core', function(Frequire, exports, module){
+                module.exports = require('fis-gui-core');
+            });
+        }else{
+            F.define('core', function(Frequire, exports, module){
+                module.exports = F.require('fis-gui-core');
+            });
+        }
+        var appData = {
+            currentView: 'c-projects',
+            projects: F.require('core').project.getProjects(),
+            nav: {
+                "c-add-project": "Add",
+                "c-index": "Run",
+            }
+        }
+        var app = new Vue({
+            el: '#app',
+            data: appData,
+            components: {
+                'c-nav': F.require('nav'),
+                'c-index': F.require('index'),
+                'c-setting': F.require('setting'),
+                'c-menu': F.require('menu'),
+                'c-add-project': F.require('add-project'),
+                'c-projects': F.require('projects'),
+            },
+            created: function(){
+                this.$on('addProject', function(project){
+                    this.projects.push(project);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

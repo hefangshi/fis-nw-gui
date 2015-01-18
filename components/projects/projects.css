@@ -1,0 +1,20 @@
+.project-panel {
+  margin-bottom: 5px;
+}
+.project-panel .panel-heading {
+  cursor: pointer;
+}
+.project-panel .panel-body {
+  transition: all .6s ease;
+  height: 160px;
+  overflow: hidden;
+  padding: 0px;
+}
+.project-panel .panel-body .panel-body-wrap {
+  padding: 15px;
+  display: block;
+}
+.project-panel .panel-body.expand-enter,
+.project-panel .panel-body.expand-leave {
+  height: 0;
+}

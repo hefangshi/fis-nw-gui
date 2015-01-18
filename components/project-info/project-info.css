@@ -1,0 +1,6 @@
+.project-info .input-group {
+  margin-bottom: 4px;
+}
+.project-info span.input-group-addon {
+  min-width: 70px;
+}

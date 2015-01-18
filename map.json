@@ -1,0 +1,196 @@
+{
+    "res": {
+        "add-project": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/components/add-project/add-project.js",
+            "type": "js",
+            "deps": [
+                "core",
+                "folder-select",
+                "components/add-project/add-project.less"
+            ],
+            "id": "add-project"
+        },
+        "components/add-project/add-project.less": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/components/add-project/add-project.css",
+            "type": "css",
+            "id": "components/add-project/add-project.less"
+        },
+        "command": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/components/command/command.js",
+            "type": "js",
+            "id": "command"
+        },
+        "fis-gui-core": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/components/fis-gui-core/fis-gui-core.js",
+            "type": "js",
+            "id": "fis-gui-core"
+        },
+        "folder-select": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/components/folder-select/folder-select.js",
+            "type": "js",
+            "deps": [
+                "components/folder-select/folder-select.less"
+            ],
+            "id": "folder-select"
+        },
+        "components/folder-select/folder-select.less": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/components/folder-select/folder-select.css",
+            "type": "css",
+            "id": "components/folder-select/folder-select.less"
+        },
+        "index": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/components/index/index.js",
+            "type": "js",
+            "deps": [
+                "core",
+                "folder-select",
+                "command",
+                "components/index/index.less"
+            ],
+            "id": "index"
+        },
+        "components/index/index.less": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/components/index/index.css",
+            "type": "css",
+            "id": "components/index/index.less"
+        },
+        "menu": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/components/menu/menu.js",
+            "type": "js",
+            "deps": [
+                "components/menu/menu.less"
+            ],
+            "id": "menu"
+        },
+        "components/menu/menu.less": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/components/menu/menu.css",
+            "type": "css",
+            "id": "components/menu/menu.less"
+        },
+        "nav": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/components/nav/nav.js",
+            "type": "js",
+            "deps": [
+                "components/nav/nav.less"
+            ],
+            "id": "nav"
+        },
+        "components/nav/nav.less": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/components/nav/nav.css",
+            "type": "css",
+            "id": "components/nav/nav.less"
+        },
+        "project-info": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/components/project-info/project-info.js",
+            "type": "js",
+            "deps": [
+                "components/project-info/project-info.less"
+            ],
+            "id": "project-info"
+        },
+        "components/project-info/project-info.less": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/components/project-info/project-info.css",
+            "type": "css",
+            "id": "components/project-info/project-info.less"
+        },
+        "projects": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/components/projects/projects.js",
+            "type": "js",
+            "deps": [
+                "project-info",
+                "components/projects/projects.less"
+            ],
+            "id": "projects"
+        },
+        "components/projects/projects.less": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/components/projects/projects.css",
+            "type": "css",
+            "id": "components/projects/projects.less"
+        },
+        "setting": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/components/setting/setting.js",
+            "type": "js",
+            "deps": [
+                "components/setting/setting.less"
+            ],
+            "id": "setting"
+        },
+        "components/setting/setting.less": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/components/setting/setting.css",
+            "type": "css",
+            "id": "components/setting/setting.less"
+        },
+        "lib/vendor/bootstrap/css/bootstrap-theme.css": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/lib/vendor/bootstrap/css/bootstrap-theme.css",
+            "type": "css"
+        },
+        "lib/vendor/bootstrap/css/bootstrap-theme.min.css": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/lib/vendor/bootstrap/css/bootstrap-theme.min.css",
+            "type": "css"
+        },
+        "lib/vendor/bootstrap/css/bootstrap.css": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/lib/vendor/bootstrap/css/bootstrap.css",
+            "type": "css"
+        },
+        "lib/vendor/bootstrap/css/bootstrap.min.css": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/lib/vendor/bootstrap/css/bootstrap.min.css",
+            "type": "css"
+        },
+        "lib/vendor/bootstrap/css/metro-bootstrap.css": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/lib/vendor/bootstrap/css/metro-bootstrap.css",
+            "type": "css",
+            "id": "lib/vendor/bootstrap/css/metro-bootstrap.css"
+        },
+        "lib/vendor/bootstrap/css/metro-bootstrap.min.css": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/lib/vendor/bootstrap/css/metro-bootstrap.min.css",
+            "type": "css"
+        },
+        "lib/vendor/bootstrap/js/bootstrap.js": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/lib/vendor/bootstrap/js/bootstrap.js",
+            "type": "js"
+        },
+        "lib/vendor/bootstrap/js/bootstrap.min.js": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/lib/vendor/bootstrap/js/bootstrap.min.js",
+            "type": "js"
+        },
+        "lib/vendor/bootstrap/js/npm.js": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/lib/vendor/bootstrap/js/npm.js",
+            "type": "js",
+            "deps": [
+                "../../js/transition.js",
+                "../../js/alert.js",
+                "../../js/button.js",
+                "../../js/carousel.js",
+                "../../js/collapse.js",
+                "../../js/dropdown.js",
+                "../../js/modal.js",
+                "../../js/tooltip.js",
+                "../../js/popover.js",
+                "../../js/scrollspy.js",
+                "../../js/tab.js",
+                "../../js/affix.js"
+            ]
+        },
+        "lib/vendor/jquery.js": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/lib/vendor/jquery.js",
+            "type": "js",
+            "id": "lib/vendor/jquery.js"
+        },
+        "lib/vendor/mod.js": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/lib/vendor/mod.js",
+            "type": "js",
+            "id": "lib/vendor/mod.js"
+        },
+        "lib/vendor/vue.js": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/lib/vendor/vue.js",
+            "type": "js",
+            "id": "lib/vendor/vue.js"
+        },
+        "static/css/index.less": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/static/css/index.css",
+            "type": "css",
+            "id": "static/css/index.less"
+        }
+    },
+    "pkg": {}
+}

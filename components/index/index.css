@@ -1,0 +1,7 @@
+.main .group:first-child {
+  margin-top: 0;
+}
+.main .group {
+  margin-top: 10px;
+  display: block;
+}

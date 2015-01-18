@@ -1,0 +1,17 @@
+.menu {
+  float: right;
+}
+.menu .btn {
+  -webkit-app-region: no-drag;
+  border-top: none;
+}
+.menu .btn:last-child {
+  border-right: none;
+}
+.nav .btn {
+  -webkit-app-region: no-drag;
+  border-top: none;
+}
+.nav .btn:first-child {
+  border-left: none;
+}
