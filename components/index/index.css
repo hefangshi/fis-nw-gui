@@ -5,3 +5,32 @@
   margin-top: 10px;
   display: block;
 }
+.main .project-item {
+  padding-bottom: 18px;
+}
+.main .project-item input {
+  vertical-align: text-top;
+}
+.main .project-item label {
+  font-weight: normal;
+  cursor: pointer;
+  margin: 3px;
+}
+.main .project-item .release-options {
+  float: right;
+}
+.main .project-item .release-options .setting-button > span {
+  font-size: 18px;
+}
+.main .project-item .release-options .watch-button,
+.main .project-item .release-options .live-button {
+  font-size: 13px;
+}
+.main .project-item .release-options .dest-button {
+  min-width: 100px;
+  font-size: 13px;
+}
+.main .project-item .release-options .dest-button .caret {
+  float: right;
+  margin-top: 9px;
+}

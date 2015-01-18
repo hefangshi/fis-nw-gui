@@ -186,6 +186,10 @@
             "type": "js",
             "id": "lib/vendor/vue.js"
         },
+        "node_modules/fis-gui-core/index.js": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/node_modules/fis-gui-core/index.js",
+            "type": "js"
+        },
         "static/css/index.less": {
             "uri": "__DOMAIN_PLACE_HOLDER__/static/css/index.css",
             "type": "css",

@@ -32,7 +32,6 @@
   color: #2e8bcc;
   background-color: white;
   border-top: none;
-  cursor: default;
 }
 .fg-navbar > li.active .glyphicon {
   color: #2e8bcc;

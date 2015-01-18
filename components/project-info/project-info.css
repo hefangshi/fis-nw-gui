@@ -4,13 +4,3 @@
 .project-info span.input-group-addon {
   min-width: 70px;
 }
-.project-info .release-options label {
-  font-weight: normal;
-  margin: 3px;
-  line-height: 20px;
-  cursor: pointer;
-  font-size: 15px;
-}
-.project-info .release-options input {
-  vertical-align: text-top;
-}

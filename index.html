@@ -40,7 +40,7 @@
         <div class="menu-wrap">
             <c-menu class="clearfix"></c-menu>
         </div>
-        <div class="animated page"
+        <div class="page"
             data-view="{{currentView}}"
             v-component="{{currentView}}"
             keep-alive>
@@ -59,6 +59,7 @@
         }
         var appData = {
             currentView: 'c-index',
+            settingProject: 0,
             projects: F.require('core').project.getProjects()
         }
         var app = new Vue({
