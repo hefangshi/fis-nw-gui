@@ -43,8 +43,8 @@
             "type": "js",
             "deps": [
                 "core",
-                "folder-select",
                 "command",
+                "project-quickview",
                 "components/index/index.less"
             ],
             "id": "index"
@@ -92,6 +92,21 @@
             "uri": "__DOMAIN_PLACE_HOLDER__/components/project-info/project-info.css",
             "type": "css",
             "id": "components/project-info/project-info.less"
+        },
+        "project-quickview": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/components/project-quickview/project-quickview.js",
+            "type": "js",
+            "deps": [
+                "folder-select",
+                "command",
+                "components/project-quickview/project-quickview.less"
+            ],
+            "id": "project-quickview"
+        },
+        "components/project-quickview/project-quickview.less": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/components/project-quickview/project-quickview.css",
+            "type": "css",
+            "id": "components/project-quickview/project-quickview.less"
         },
         "projects": {
             "uri": "__DOMAIN_PLACE_HOLDER__/components/projects/projects.js",
