@@ -67,18 +67,18 @@
             "type": "css",
             "id": "components/menu/menu.less"
         },
-        "nav": {
-            "uri": "__DOMAIN_PLACE_HOLDER__/components/nav/nav.js",
+        "navbar": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/components/navbar/navbar.js",
             "type": "js",
             "deps": [
-                "components/nav/nav.less"
+                "components/navbar/navbar.less"
             ],
-            "id": "nav"
+            "id": "navbar"
         },
-        "components/nav/nav.less": {
-            "uri": "__DOMAIN_PLACE_HOLDER__/components/nav/nav.css",
+        "components/navbar/navbar.less": {
+            "uri": "__DOMAIN_PLACE_HOLDER__/components/navbar/navbar.css",
             "type": "css",
-            "id": "components/nav/nav.less"
+            "id": "components/navbar/navbar.less"
         },
         "project-info": {
             "uri": "__DOMAIN_PLACE_HOLDER__/components/project-info/project-info.js",

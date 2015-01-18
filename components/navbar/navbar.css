@@ -1,0 +1,42 @@
+.fg-navbar {
+  list-style-type: none;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+.fg-navbar > li {
+  display: table-cell;
+  width: 1%;
+  text-align: center;
+  height: 100px;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  background-color: #f5f5f5;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.fg-navbar > li .glyphicon {
+  display: block;
+  font-size: 24px;
+  line-height: 35px;
+}
+.fg-navbar > li:hover {
+  color: #2e8bcc;
+}
+.fg-navbar > li:hover .glyphicon {
+  color: #2e8bcc;
+}
+.fg-navbar > li.active {
+  color: #2e8bcc;
+  background-color: white;
+  border-top: none;
+  cursor: default;
+}
+.fg-navbar > li.active .glyphicon {
+  color: #2e8bcc;
+}
+.fg-navbar > li:last-child {
+  border-right: none;
+}

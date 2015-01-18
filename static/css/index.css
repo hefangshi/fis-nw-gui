@@ -1,6 +1,7 @@
 html {
   font-size: 14px;
-  height: 100vh;
+  height: 600px;
+  width: 600px;
 }
 body {
   -webkit-user-select: none;
@@ -34,6 +35,7 @@ fieldset[disabled] .form-control {
   overflow: auto;
   background: #ffffff;
   border: 1px solid #bbb;
+  position: relative;
 }
 .page {
   padding: 10 50px;
