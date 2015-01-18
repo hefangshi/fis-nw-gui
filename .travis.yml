@@ -1,5 +1,7 @@
 language: node_js
 install:
+- git config --global user.email "hefangshi@gmail.com"
+- git config --global user.name "hefangshi"
 - npm install -g fis
 - npm install -g fis-postpackager-autoload
 - npm install -g fis-parser-less
@@ -9,7 +11,8 @@ branches:
   only:
   - master
 cache:
-- npm
+  directories:
+    - /home/travis/.nvm/v0.10.35/lib/node_modules
 env:
   global:
     secure: WMUL1llGrvqUZ3WRleIypyA1p5NXp7MUbNcqZEKtHwHjeyTcplrxwMxw5qnQHvsnBwJ8uYo5eyYWKg7o22ZAhdiae+4evUUdsL24UpsC/xSktQuEDcX8HWniAPzWHAPexkYcFz+euMczcPo+qbJrGKg+l4j7q+eeGM7zf0xbU8k=
