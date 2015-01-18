@@ -17,5 +17,5 @@
   },
   "chromium-args" : "--disable-direct-write",
   "author": "",
-  "license": "ISC"
+  "license": "BSD"
 }
