@@ -1,7 +1,5 @@
 html {
   font-size: 14px;
-  height: 600px;
-  width: 600px;
 }
 body {
   -webkit-user-select: none;
@@ -40,6 +38,9 @@ fieldset[disabled] .form-control {
 .page {
   padding: 20 20px;
   width: 100%;
+  position: absolute;
+  bottom: 105px;
+  top: 30px;
 }
 .menu-wrap {
   -webkit-app-region: drag;

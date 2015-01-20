@@ -1,5 +1,5 @@
 F.define('folder-select', function(Frequire, exports, module){module.exports = {
-    template: "<div class=\"folderDrop\" v-on=\"drop:onDrop, \n    mouseover:onDragOver, \n    mouseleave:onDragLeave, \n    dragover:onDragOver, \n    dragleave:onDragLeave, \n    click:chooseFolder\" \n    v-class=\"hover:isHover\"\n    v-style=\"height:height,\n            line-height:height\">\n    <span class=\"light\">Drop folder here or click to choose</span>\n    <input name=\"file\" type=\"file\" class=\"folderChooser\" v-show=\"false\" multiple nwdirectory v-on=\"change: onChange\"/>\n</div>",
+    template: "<div class=\"folderDrop\" v-on=\"drop:onDrop, \n    mouseover:onDragOver, \n    mouseleave:onDragLeave, \n    dragover:onDragOver, \n    dragleave:onDragLeave, \n    click:chooseFolder\" \n    v-class=\"hover:isHover\"\n    v-style=\"height:height\">\n    <span class=\"light\">Drop folder here or click to choose</span>\n    <input name=\"file\" type=\"file\" class=\"folderChooser\" v-show=\"false\" multiple nwdirectory v-on=\"change: onChange\"/>\n</div>",
     data: function(){
         return {
             isHover: false
