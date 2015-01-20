@@ -12,17 +12,18 @@
   line-height: 160px;
   font-size: 26px;
   width: 100%;
-  display: table;
-  table-layout: fixed;
+}
+.folderDrop :after {
+  content: '';
+  height: 100%;
+  width: 0px;
+  display: inline-block;
+  vertical-align: middle;
 }
 .folderDrop span {
-  display: table-cell;
   vertical-align: middle;
 }
 .folderDrop.hover {
   color: #222;
   border-color: #222;
-}
-.folderSelect {
-  margin-top: 20px;
 }
