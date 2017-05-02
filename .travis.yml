@@ -10,6 +10,7 @@ script: fis release -Dd ghpages
 branches:
   only:
   - master
+  - /^greenkeeper/.*$/
 cache:
   directories:
   - "/home/travis/.nvm/v0.10.35/lib/node_modules"
